@@ -1,0 +1,54 @@
+
+.App {
+  text-align: center;
+}
+
+.pacman {
+  position: absolute;
+  width: 70px;
+  height: 70px; 
+  background: linear-gradient(45deg, yellow 50%, blue 25%, red 75%); 
+  border-radius: 50%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 20% 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pacman::before {
+  content: '';
+  position: absolute;
+  width: 10px; 
+  height: 10px; 
+  background-color: black;
+  border-radius: 50%;
+  top: 15px; 
+  left: 20px; 
+}
+
+
+
+h1 {
+  margin-bottom: 20px; 
+  color: white; 
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  overflow: hidden; 
+}
+
+.board {
+  position: relative;
+  width: 600px; 
+  height: 600px; 
+  background-color: rgba(0, 0, 0, 0.8); 
+  border: 1px solid white;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
